@@ -216,7 +216,7 @@ p, a {
 
 @media (max-width: 768px) {
   .sidebar {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 450px) {
