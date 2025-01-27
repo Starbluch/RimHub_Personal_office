@@ -10,10 +10,14 @@
 </head>
 <body>
     <div class="container">
+        <div class="main__navigation">
+            <span class="main__navigation__item "><a class="item__active" href="#">Головна</a></span>
+            <img src="assets/Icons/navigation.png" alt="">
+            <span class="main__navigation__item"><a href="#">Особистий кабінет</a></span>
+        </div> 
         <main class="main">
-            <div class="main__navigation">
 
-            <section class="sidebar">
+            <div class="sidebar">
                 <div class="sidebar__top">
                     <div class="sidebar__image">
                         <img src="assets/image/img-6.png" alt="User Photo" class="image">
@@ -23,230 +27,229 @@
                         <p class="name">Кіркіна Ірина Анатоліївна</p>
                     </div>
                 </div>
-                    <hr class="sidebar_hr">
+                <hr class="sidebar_hr">
                 <ul class="sidebar__menu">
                     <hr class="hr__link">
                     <li class="sidebar__menu-item active">
-                        <a  href="#personal" class="sidebar__menu-link">Особисті дані</a>
+                        <a href="#personal" class="sidebar__menu-link" data-target="personal">Особисті дані</a>
                     </li>
                     <hr class="hr__link">
                     <li class="sidebar__menu-item">
-                        <a  href="#orders" class="sidebar__menu-link">Мої замовлення</a>
+                        <a href="#orders" class="sidebar__menu-link" data-target="orders">Мої замовлення</a>
                     </li>
                     <hr class="hr__link">
                     <li class="sidebar__menu-item">
-                        <a  href="#tests" class="sidebar__menu-link">Тести</a>
+                        <a href="#tests" class="sidebar__menu-link" data-target="tests">Тести</a>
                     </li>
                     <hr class="hr__link">
                     <li class="sidebar__menu-item">
-                        <a  href="#certificates" class="sidebar__menu-link">Сертифікати</a>
+                        <a href="#certificates" class="sidebar__menu-link" data-target="certificates">Сертифікати</a>
                     </li>
                     <hr class="hr__link">
                     <li class="sidebar__menu-item">
-                        <a  href="#logout" class="sidebar__menu-link">Вийти</a>
+                        <a href="#logout" class="sidebar__menu-link" data-target="logout">Вийти</a>
                     </li>
-                </ul>
-              </section> 
+                </ul> 
             </div>
-            
-              <!-- <section class="accordion" data-accordion="open">
-                <div class="accordion__item_1">
-                    <div class="accordion-header"><div class="header">Економіка професії. Як бути успішним</div></div>
-                    <div class="accordion-body">
-                        <div class="accordion-body__menu">
-                            <div class="menu__item_1">Назва</div>
-                            <div class="menu__item_2">Відсоток виконання</div>
-                            <div class="menu__item_3">Повторне виконання</div>
-                            <div class="menu__item_4">Дата виконання</div>
-                        </div>
-                        <div class="accordion__body__test">
-                            <div class="icon">
-                                <span class="span_1">Тест 1</span>
-                                <span class="span_2"><a href="#"><img src="assets/Icons/icon_30.png" alt="" class="img"></a></span>
-                                <span class="span_3">53</span>
+            <div class="groop">
+                <section class="accordion section" id="tests" data-accordion="open">
+                    <div class="accordion__item_1">
+                        <div class="accordion-header"><div class="header">Економіка професії. Як бути успішним</div></div>
+                        <div class="accordion-body">
+                            <div class="accordion-body__menu">
+                                <div class="menu__item_1">Назва</div>
+                                <div class="menu__item_2">Відсоток виконання</div>
+                                <div class="menu__item_3">Повторне виконання</div>
+                                <div class="menu__item_4">Дата виконання</div>
                             </div>
-
-                            <div>5</div>
-                            <div class="icon_data">2024-12-10 16:10:26 </div>
-                        </div>
-                        <hr class="accordion__test__hr">
-                        <div class="accordion__body__test">
-                            <div class="icon">
-                                <span class="span_1">Тест 1</span>
-                                <span class="span_2"><a href="#"><img src="assets/Icons/icon_30.png" alt="" class="img"></a></span>
-                                <span class="span_3">53</span>
-                            </div>
-
-                            <div>5</div>
-                            <div class="icon_data">2024-12-10 16:10:26 </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion__item_2">
-                    <div class="accordion-header"><div class="header">Житлова нерухомість</div></div>
-                    <div class="accordion-body">
-                        <div class="accordion-body__menu">
-                            <div class="menu__item_1">Назва</div>
-                            <div class="menu__item_2">Відсоток виконання</div>
-                            <div class="menu__item_3">Повторне виконання</div>
-                            <div class="menu__item_4">Дата виконання</div>
-                        </div>
-                        <div class="accordion__body__test">
-                            <div class="icon">
-                                <span class="span_1">Тест 1</span>
-                                <span class="span_2"><a href="#"><img src="assets/Icons/icon_30.png" alt="" class="img"></a></span>
-                                <span class="span_3">53</span>
-                            </div>
-
-                            <div>5</div>
-                            <div class="icon_data">2024-12-10 16:10:26 </div>
-                        </div>
-                        <hr class="accordion__test__hr">
-                        <div class="accordion__body__test">
-                            <div class="icon">
-                                <span class="span_1">Тест 1</span>
-                                <span class="span_2"><a href="#"><img src="assets/Icons/icon_30.png" alt="" class="img"></a></span>
-                                <span class="span_3">53</span>
-                            </div>
-
-                            <div>5</div>
-                            <div class="icon_data">2024-12-10 16:10:26 </div>
-                        </div>
-                    </div>
-                </div>
-              </section> -->
-
-              <!-- <section class="order__accordion" data-order__accordion="open">
-                <div class="order__accordion__item_1">
-                    <div class="order__accordion-header"><div class="order__header">Житлова нерухомість</div></div>
-                    <div class="order__accordion-body">
-                        <div class="order__accordion-body__menu">
-                            <div class="order__menu__item_1">Назва</div>
-                            <div class="order__menu__item_2">Дата покупки</div>
-                            <div class="order__menu__item_3">На який час(міс.)</div>
-                            <div class="order__menu__item_4">Дата завершення</div>
-                            <div class="order__meun__item_5">Дія</div>
-                        </div>
-                        <div class="order__accordion__body__test">
-                            <span class="order__span_1">Житлова нерухомість</span>
-                            <span class="order__span_2">2024-12-10</span>
-                            <span class="order__span_3">5</span>
-                            <div>2024-12-10</div>
-                            <div class="order__icon__data">
-                                <a href="#" class="order__data__item_1">
-                                    Пролонгувати
-                                </a>
-                                <a href="#" class="order__data__item_1">
-                                    Переглянути
-                                </a>
-                            </div>
-                        </div>
-                        <hr class="order__accordion__hr">
-                    </div>
-                </div>
-              </section> -->
-
-              <!-- <section class="certificates__accordion" data-certificates__accordion="open">
-                <div class="certificates__accordion__item_1">
-
-                    <div class="certificates__accordion-header"><div class="certificates__header">Житлова нерухомість</div></div>
-                    <div class="certificates__accordion-body">
-
-                        <div class="certificates__accordion-body__menu">
-                            <div class="certificates__btn_1">
-                                <div class="btn_1">
-                                    <div class="image">
-                                        <img src="assets/Icons/icon_40.png" alt="" class="img">
-                                    </div>
-                                    
-                                    <a class="a" href="#">
-                                        <p class="btn_1_text">Скачати сертифікат</p>
-                                    </a>
+                            <div class="accordion__body__test">
+                                <div class="icon">
+                                    <span class="span_1">Тест 1</span>
+                                    <span class="span_2"><a href="#"><img src="assets/Icons/icon_30.png" alt="" class="img"></a></span>
+                                    <span class="span_3">53</span>
                                 </div>
 
+                                <div>5</div>
+                                <div class="icon_data">2024-12-10 16:10:26 </div>
                             </div>
-                            <div class="certificates__btn_2">
-                                <div class="btn_2">
-                                    <div class="image">
-                                        <img src="assets/Icons/icon_41.png" alt="" class="img">
-                                    </div>
-
-                                    <a class="a" href="#">
-                                        <p class="btn_2_text">Згенерувати сертифікат</p>
-                                    </a>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-
-                <div class="certificates__accordion__item_2">
-
-                    <div class="certificates__accordion-header"><div class="certificates__header">Маркетинг</div></div>
-                    <div class="certificates__accordion-body">
-
-                        <div class="certificates__accordion-body__menu">
-                            <div class="certificates__btn_1">
-                                <div class="btn_1">
-                                    <div class="image">
-                                        <img src="assets/Icons/icon_40.png" alt="" class="img">
-                                    </div>
-                                    
-                                    <a class="a" href="#">
-                                        <p class="btn_1_text">Скачати сертифікат</p>
-                                    </a>
+                            <hr class="accordion__test__hr">
+                            <div class="accordion__body__test">
+                                <div class="icon">
+                                    <span class="span_1">Тест 1</span>
+                                    <span class="span_2"><a href="#"><img src="assets/Icons/icon_30.png" alt="" class="img"></a></span>
+                                    <span class="span_3">53</span>
                                 </div>
 
+                                <div>5</div>
+                                <div class="icon_data">2024-12-10 16:10:26 </div>
                             </div>
-                            <div class="certificates__btn_2">
-                                <div class="btn_2">
-                                    <div class="image">
-                                        <img src="assets/Icons/icon_41.png" alt="" class="img">
+                        </div>
+                    </div>
+                    <div class="accordion__item_2">
+                        <div class="accordion-header"><div class="header">Житлова нерухомість</div></div>
+                        <div class="accordion-body">
+                            <div class="accordion-body__menu">
+                                <div class="menu__item_1">Назва</div>
+                                <div class="menu__item_2">Відсоток виконання</div>
+                                <div class="menu__item_3">Повторне виконання</div>
+                                <div class="menu__item_4">Дата виконання</div>
+                            </div>
+                            <div class="accordion__body__test">
+                                <div class="icon">
+                                    <span class="span_1">Тест 1</span>
+                                    <span class="span_2"><a href="#"><img src="assets/Icons/icon_30.png" alt="" class="img"></a></span>
+                                    <span class="span_3">53</span>
+                                </div>
+
+                                <div>5</div>
+                                <div class="icon_data">2024-12-10 16:10:26 </div>
+                            </div>
+                            <hr class="accordion__test__hr">
+                            <div class="accordion__body__test">
+                                <div class="icon">
+                                    <span class="span_1">Тест 1</span>
+                                    <span class="span_2"><a href="#"><img src="assets/Icons/icon_30.png" alt="" class="img"></a></span>
+                                    <span class="span_3">53</span>
+                                </div>
+
+                                <div>5</div>
+                                <div class="icon_data">2024-12-10 16:10:26 </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="order__accordion section" id="orders" data-order__accordion="open">
+                    <div class="order__accordion__item_1">
+                        <div class="order__accordion-header"><div class="order__header">Житлова нерухомість</div></div>
+                        <div class="order__accordion-body">
+                            <div class="order__accordion-body__menu">
+                                <div class="order__menu__item_1">Назва</div>
+                                <div class="order__menu__item_2">Дата покупки</div>
+                                <div class="order__menu__item_3">На який час(міс.)</div>
+                                <div class="order__menu__item_4">Дата завершення</div>
+                                <div class="order__meun__item_5">Дія</div>
+                            </div>
+                            <div class="order__accordion__body__test">
+                                <span class="order__span_1">Житлова нерухомість</span>
+                                <span class="order__span_2">2024-12-10</span>
+                                <span class="order__span_3">5</span>
+                                <div>2024-12-10</div>
+                                <div class="order__icon__data">
+                                    <a href="#" class="order__data__item_1">
+                                        Пролонгувати
+                                    </a>
+                                    <a href="#" class="order__data__item_1">
+                                        Переглянути
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="order__accordion__hr">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="certificates__accordion section" id="certificates" data-certificates__accordion="open">
+                    <div class="certificates__accordion__item_1">
+
+                        <div class="certificates__accordion-header"><div class="certificates__header">Житлова нерухомість</div></div>
+                        <div class="certificates__accordion-body">
+
+                            <div class="certificates__accordion-body__menu">
+                                <div class="certificates__btn_1">
+                                    <div class="btn_1">
+                                        <div class="image">
+                                            <img src="assets/Icons/icon_40.png" alt="" class="img">
+                                        </div>
+                                        
+                                        <a class="a" href="#">
+                                            <p class="btn_1_text">Скачати сертифікат</p>
+                                        </a>
                                     </div>
 
-                                    <a class="a" href="#">
-                                        <p class="btn_2_text">Згенерувати сертифікат</p>
-                                    </a>
-                                </div> 
+                                </div>
+                                <div class="certificates__btn_2">
+                                    <div class="btn_2">
+                                        <div class="image">
+                                            <img src="assets/Icons/icon_41.png" alt="" class="img">
+                                        </div>
+
+                                        <a class="a" href="#">
+                                            <p class="btn_2_text">Згенерувати сертифікат</p>
+                                        </a>
+                                    </div> 
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
-                    
-                </div>
-              </section> -->
 
-            <section class="form_info">
-                    <div class="form_profile">
-                        <div class="image">
-                            <img src="assets/image/img-6.png" alt="" class="img">
+
+                    <div class="certificates__accordion__item_2">
+
+                        <div class="certificates__accordion-header"><div class="certificates__header">Маркетинг</div></div>
+                        <div class="certificates__accordion-body">
+
+                            <div class="certificates__accordion-body__menu">
+                                <div class="certificates__btn_1">
+                                    <div class="btn_1">
+                                        <div class="image">
+                                            <img src="assets/Icons/icon_40.png" alt="" class="img">
+                                        </div>
+                                        
+                                        <a class="a" href="#">
+                                            <p class="btn_1_text">Скачати сертифікат</p>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="certificates__btn_2">
+                                    <div class="btn_2">
+                                        <div class="image">
+                                            <img src="assets/Icons/icon_41.png" alt="" class="img">
+                                        </div>
+
+                                        <a class="a" href="#">
+                                            <p class="btn_2_text">Згенерувати сертифікат</p>
+                                        </a>
+                                    </div> 
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn">
-                            <button class="button">
-                                Змінити фото
-                            </button>
+                        
+                    </div>
+                </section>
+
+                <section class="section form_info " id="personal">
+                        <div class="form_profile">
+                            <div class="image">
+                                <img src="assets/image/img-6.png" alt="" class="img">
+                            </div>
+                            <div class="btn">
+                                <button class="button">
+                                    Змінити фото
+                                </button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form__group">
-                        <form class="form__group__item_1">
-                                <input type="email" id="email" class="form__input" placeholder="Електронна адреса">
-                                <input type="number" id="discount" class="form__input" placeholder="Знижка (%)">
-                                <input type="text" id="last-name" class="form__input" placeholder="Прізвище">
-                                <input type="text" id="first-name" class="form__input" placeholder="Ім’я">
-                                <input type="text" id="middle-name" class="form__input" placeholder="По батькові">
+                        <div class="form__group">
+                            <form class="form__group__item_1">
+                                    <input type="email" id="email" class="form__input" placeholder="Електронна адреса">
+                                    <input type="number" id="discount" class="form__input" placeholder="Знижка (%)">
+                                    <input type="text" id="last-name" class="form__input" placeholder="Прізвище">
+                                    <input type="text" id="first-name" class="form__input" placeholder="Ім’я">
+                                    <input type="text" id="middle-name" class="form__input" placeholder="По батькові">
 
-                                <input type="text" id="position" class="form__input" placeholder="Посада">
-                        </form>
-                        <form class="form__group__item_2">
-                                <input type="tel" id="phone" class="form__input" placeholder="Телефон">
-                                <input type="password" id="password" class="form__input" placeholder="Пароль">
-                                <textarea id="about" class="form__textarea" placeholder="Про себе"></textarea>
-                        </form>
-                    </div>
-            </section>
-              
+                                    <input type="text" id="position" class="form__input" placeholder="Посада">
+                            </form>
+                            <form class="form__group__item_2">
+                                    <input type="tel" id="phone" class="form__input" placeholder="Телефон">
+                                    <input type="password" id="password" class="form__input" placeholder="Пароль">
+                                    <textarea id="about" class="form__textarea" placeholder="Про себе"></textarea>
+                            </form>
+                        </div>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <div class="footer-container">
@@ -398,6 +401,32 @@
             })
         }
         certificates__accordion();
+
+        document.querySelectorAll('.sidebar__menu-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // Отменяем переход по ссылке
+
+    // Убираем класс "active" у всех секций
+    document.querySelectorAll('.section').forEach(section => {
+      section.classList.remove('active');
+    });
+
+    // Удаляем активный класс у всех пунктов меню
+    document.querySelectorAll('.sidebar__menu-item').forEach(item => {
+      item.classList.remove('active');
+    });
+
+    // Показываем нужную секцию
+    const targetId = this.getAttribute('data-target');
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.classList.add('active');
+    }
+
+    // Добавляем активный класс текущему пункту меню
+    this.parentElement.classList.add('active');
+  });
+});
     </script>
 </body>
 </html>

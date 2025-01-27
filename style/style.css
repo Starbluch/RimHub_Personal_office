@@ -1,3 +1,8 @@
+@charset "UTF-8";
+html {
+  position: relative;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -47,7 +52,7 @@ p, a {
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 1.8fr;
+  grid-template-columns: 1fr 2fr;
   gap: 10px;
   width: 100%;
   max-width: 1200px;
@@ -55,6 +60,18 @@ p, a {
   margin: 0 auto;
   overflow: hidden;
   padding: 4px;
+}
+.main .groop {
+  grid-column: 2/3;
+  position: relative;
+  max-width: 780px;
+  margin: 0 0 0px 20px;
+}
+@media (max-width: 768px) {
+  .main .groop {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -68,8 +85,14 @@ p, a {
     gap: 5px;
   }
 }
-.main__navigation {
+.main_n {
   margin: 0 auto;
+}
+
+.main__navigation {
+  max-width: 1160px;
+  width: 100%;
+  margin: 50px auto 40px auto;
 }
 .main__navigation .img {
   margin: 0 8px;
@@ -792,8 +815,26 @@ p, a {
   color: #ffffff;
 }
 
+.section {
+  visibility: hidden; /* Скрывает секцию, но сохраняет место */
+  opacity: 0; /* Делает её невидимой */
+  position: absolute; /* Убирает её из потока, чтобы она не занимала место */
+  top: 0; /* Устанавливаем в нужную позицию */
+  left: 0;
+  width: 100%; /* Устанавливаем размер секции */
+  height: 100%; /* По необходимости */
+  transition: opacity 0.3s ease-in-out; /* Анимация для плавности */
+}
+
+.section.active {
+  width: 100%; /* Устанавливаем размер секции */
+  height: 100%;
+  visibility: visible; /* Показывает секцию */
+  opacity: 1; /* Делает её видимой */
+  position: relative; /* Возвращает её в нормальный поток */
+}
+
 .form_info {
-  margin: 0px 10px 80px 30px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 1fr;
