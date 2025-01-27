@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   position: relative;
 }
@@ -120,6 +119,7 @@ p, a {
 }
 
 .sidebar {
+  margin-bottom: 80px;
   padding: 25px 12px;
   font-family: "Montserrat";
   height: 100%;
@@ -214,6 +214,11 @@ p, a {
   background-color: rgba(116, 77, 41, 0.3607843137);
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    margin-bottom: 80px;
+  }
+}
 @media (max-width: 450px) {
   .sidebar {
     height: 460px;
@@ -816,22 +821,22 @@ p, a {
 }
 
 .section {
-  visibility: hidden; /* Скрывает секцию, но сохраняет место */
-  opacity: 0; /* Делает её невидимой */
-  position: absolute; /* Убирает её из потока, чтобы она не занимала место */
-  top: 0; /* Устанавливаем в нужную позицию */
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
   left: 0;
-  width: 100%; /* Устанавливаем размер секции */
-  height: 100%; /* По необходимости */
-  transition: opacity 0.3s ease-in-out; /* Анимация для плавности */
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .section.active {
-  width: 100%; /* Устанавливаем размер секции */
+  width: 100%;
   height: 100%;
-  visibility: visible; /* Показывает секцию */
-  opacity: 1; /* Делает её видимой */
-  position: relative; /* Возвращает её в нормальный поток */
+  visibility: visible;
+  opacity: 1;
+  position: relative;
 }
 
 .form_info {
