@@ -296,7 +296,7 @@ p, a {
   width: 15px;
   height: 8px;
   margin: 10px 20px;
-  background-image: url(/assets/Icons/Arrow_1.png);
+  background-image: url(../assets/Icons/Arrow_2.png);
   float: right;
 }
 
@@ -308,7 +308,7 @@ p, a {
   width: 15px;
   height: 8px;
   margin: 10px 20px;
-  background-image: url(/assets/Icons/Arrow_2.png);
+  background-image: url(../assets/Icons/Arrow_1.png);
 }
 
 .accordion-body {
@@ -479,7 +479,7 @@ p, a {
   width: 15px;
   height: 8px;
   margin: 10px 20px;
-  background-image: url(/assets/Icons/Arrow_1.png);
+  background-image: url(../assets/Icons/Arrow_2.png);
   float: right;
 }
 
@@ -491,7 +491,7 @@ p, a {
   width: 15px;
   height: 8px;
   margin: 10px 20px;
-  background-image: url(/assets/Icons/Arrow_2.png);
+  background-image: url(../assets/Icons/Arrow_1.png);
 }
 
 .order__accordion-body {
@@ -728,7 +728,7 @@ p, a {
   width: 15px;
   height: 8px;
   margin: 10px 20px;
-  background-image: url(/assets/Icons/Arrow_2.png);
+  background-image: url(../assets/Icons/Arrow_2.png);
   float: right;
 }
 
@@ -740,7 +740,7 @@ p, a {
   width: 15px;
   height: 8px;
   margin: 10px 20px;
-  background-image: url(/assets/Icons/Arrow_1.png);
+  background-image: url(../assets/Icons/Arrow_1.png);
 }
 
 .certificates__accordion-body {
