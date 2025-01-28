@@ -167,6 +167,7 @@ p,a {
                 font-weight: 600;
             }
         }
+
         @media (max-width: 450px) {
             .sidebar__name {
                 font-size: 14px;
@@ -198,6 +199,7 @@ p,a {
         width: 100%;
         border: none;
         height: 0.5px;
+        margin-top: 10px;
         background-color: $color_text_2;
     }
     .sidebar__menu {
@@ -209,6 +211,17 @@ p,a {
                 text-decoration: none;
                 color: inherit;
                 font-size: 20px;
+            }
+            .sidebar__menu-button {
+                text-decoration: none;
+                color: inherit;
+                font-size: 20px;
+                background-color: rgb(92, 46, 3, 0);
+            }
+            @media (max-width: 450px) {
+                .sidebar__menu-button {
+                    font-size: 14px;
+                }
             }
             @media (max-width: 450px) {
                 .sidebar__menu-link {
@@ -755,7 +768,7 @@ p,a {
     width: 15px;
     height: 8px;
     margin: 10px 20px;
-    background-image: url(/assets/Icons/Arrow_1.png);
+    background-image: url(/assets/Icons/Arrow_2.png);
     float: right;
 }
 .certificates__accordion-header.active:after {
@@ -766,7 +779,7 @@ p,a {
     width: 15px;
     height: 8px;
     margin: 10px 20px;
-    background-image: url(/assets/Icons/Arrow_2.png);
+    background-image: url(/assets/Icons/Arrow_1.png);
 }
 .certificates__accordion-body {
     height: auto;
@@ -921,7 +934,7 @@ p,a {
             justify-content: center;
         }
         .button {
-            font-size: 14   px;
+            font-size: 14px;
         }
     }
 }
