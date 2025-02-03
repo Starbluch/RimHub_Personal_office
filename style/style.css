@@ -252,7 +252,7 @@ p, a {
 .main__navigation {
   max-width: 1160px;
   width: 100%;
-  margin: 140px auto 40px auto;
+  margin: 140px 0 40px 5px;
 }
 .main__navigation .img {
   margin: 0 8px;
