@@ -252,7 +252,7 @@ p, a {
 .main__navigation {
   max-width: 1160px;
   width: 100%;
-  margin: 140px 0 40px 5px;
+  margin: 140px auto 40px auto;
 }
 .main__navigation .img {
   margin: 0 8px;
@@ -273,6 +273,9 @@ p, a {
   text-decoration: none;
   color: inherit;
 }
+.main__navigation .main__navigation__item:nth-child(1) {
+  margin-left: 5px;
+}
 @media (max-width: 450px) {
   .main__navigation .main__navigation__item {
     font-size: 14px;
@@ -281,7 +284,7 @@ p, a {
 
 @media (max-width: 768px) {
   .main__navigation {
-    margin: 90px 0 40px 5px;
+    margin: 90px auto 40px auto;
   }
 }
 .sidebar {
