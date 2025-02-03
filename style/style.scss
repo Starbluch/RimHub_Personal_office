@@ -298,6 +298,13 @@ p,a {
     }
 }
 
+@media (max-width: 768px) {
+    .main__navigation {
+        margin: 90px 0 40px 5px;
+    }
+}
+
+
 .sidebar {
     margin-bottom: 80px;
     padding: 25px 12px;
